@@ -1,0 +1,256 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Diseño básico para todas las pantallas */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* Cambiar a una fuente más moderna y legible */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    /* Fondo claro y agradable para todas las pantallas */
+    color: #333;
+    /* Texto en color oscuro para mejor legibilidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 15px 20px;
+    background-color: #003366;
+    /* Color más suave para el fondo del encabezado */
+    color: white;
+    top: 0;
+    /* Posicionar en la parte superior de la página */
+    z-index: 1000;
+    /* Asegurarse de que el header quede por encima del contenido */
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+header .logo img {
+    max-width: 120px;
+    height: auto;
+}
+
+header .navigation ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+header .navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header .navigation a:hover {
+    color: #ffcc00;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ddd;
+}
+
+#R_cuentas {
+    background-color: #f4f7fc;
+    /* Fondo suave y claro */
+    padding: 2rem;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrado en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.P_Juntas {
+    background-color: #f4f7fc;
+    /* Fondo suave y claro */
+    padding: 2rem;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrado en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.P_innovacion {
+    background-color: #f4f7fc;
+    /* Fondo suave y claro */
+    padding: 2rem;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrado en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.P_inteligente {
+    background-color: #f4f7fc;
+    /* Fondo suave y claro */
+    padding: 2rem;
+    /* Espaciado interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo */
+    margin: 20px auto;
+    /* Centrado en la página */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+h1 {
+    font-size: 28px;
+    margin: 20px 0;
+    text-align: center;
+    padding: 0 10px;
+    color: #003366;
+}
+
+p {
+    padding: 0 20px;
+    text-align: justify;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+}
+
+.rendicion_img,
+.Innovacion_img img,
+.inteligente_img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+.video_juntas video {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.pdf-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.p_footer{
+    color: #ccc;
+}
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries para pantallas medianas (tabletas y móviles grandes) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .navigation ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+
+    .rendicion_img,
+    .Innovacion_img img,
+    .inteligente_img {
+        margin: 15px auto;
+    }
+}
+
+/* Media queries para pantallas pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header .logo img {
+        max-width: 100px;
+    }
+
+    header .navigation ul {
+        gap: 10px;
+    }
+
+    header .navigation a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 12px;
+        align-items: center;
+    }
+}
